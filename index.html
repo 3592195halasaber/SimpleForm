@@ -1,136 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/all.min.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Style.css" />
+    <title>Document</title>
   </head>
-
-  <body style="background-color: rgb(206, 176, 9) ;margin: 50px;">
-    <fieldset class=" m-32 ">
-      <legend
-        style="
-          text-align: center;
-          padding: 20px;
-          font-size: xx-large;
-          color: white;
-          text-shadow: 2px 2px 4px black;
-        "
-      >
-        Personal Data
-      </legend>
-      <form class=" bg-black text-white m-auto p-8 rounded-5 " style="width: 50%">
-        <fieldset class=" p-5 ">
-          <table class="m-auto  ">
-            <tr>
-              <td>
-                <label for="first name" class="fs-4 m-3">First Name</label>
-              </td>
-              <td>
-                <input
-                  type="text"
-                  id="first name"
-                  name="first name"
-                  placeholder="ex ahmed"
-                  class="btn btn-light p-1"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="second nme" class="fs-4 m-3">Second Name</label>
-              </td>
-              <td>
-                <input
-                  type="text"
-                  id="second name"
-                  name="second name"
-                  placeholder="ex bahnasy"
-                  class="btn btn-light p-1"
-                />
-              </td>
-            </tr>
+  <body>
+    <h1>Student Form</h1>
+    <form style="padding: 10px">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
           <tr>
             <td>
-              <label for="your phone"class="fs-4 m-3"> Your phone </label>
+              <label for="Text">Text:</label>
             </td>
             <td>
               <input
-                type="tel"
-                id="your phone"
-                name="your phone"
-                class="btn btn-light p-1"
+                type="text"
+                name="Text"
+                id="Text"
+                placeholder="Enter your text "
               />
             </td>
           </tr>
           <tr>
             <td>
-              <label for="email"class="fs-4 m-3"> Email </label>
+              <label for="Email">Email:</label>
             </td>
             <td>
               <input
                 type="email"
-                id="email"
-                name="email"
-                class="btn btn-light p-1"
+                name="Email"
+                id="Email"
+                placeholder="Enter your email "
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Password">Password:</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="Password"
+                id="Password"
+                placeholder="Enter your password "
               />
             </td>
           </tr>
           <tr>
             <td>
-              <label for="password"class="fs-4 m-3"> password </label>
+              <label for="website">Website:</label>
             </td>
             <td>
               <input
-                type="password"
-                id="password"
-                name="password"
-                class="btn btn-light p-1"
+                type="text"
+                name="website"
+                id="website"
+                placeholder="Enter your website "
               />
             </td>
           </tr>
           <tr>
             <td>
-              <label for="Re-password"class="fs-4 m-3"> re-password </label>
+              <label for="Phone">Phone:</label>
             </td>
             <td>
               <input
-                type="password"
-                id="Re-password"
-                name="re-password"
-                class="btn btn-light p-1"
+                type="tel"
+                name="Phone"
+                id="Phone"
+                placeholder="Enter your phone number "
               />
             </td>
           </tr>
         </table>
-     
-   <div class="d-flex justify-content-center m-3 ">
-     <input type="radio" name="status" value="student" id="student"  />
-        <label for="student" class="p-2 fs-4">student</label>
-        <input type="radio" name="status" value="graduated" id="graduated" />
-        <label for="graduated" class="p-2 fs-4">graduated</label>
-   </div>
-   
-        <select name="" id="" class="btn btn-light m-auto d-flex justify-center " >
-          <option disabled hidden selected>AUD</option>
-          <optgroup label="group 1">
-            <option>option1.1</option>
-          </optgroup>
-          <optgroup label="group 2">
-            <option>option2.1</option>
-            <option>option2.2</option>
-          </optgroup>
-          <optgroup label="group 3">
-            <option>option3.1</option>
-            <option>option3.2</option>
-            <option>option3.3</option>
-          </optgroup>
-        </select> 
-        <br>
-        <button type="button" class="btn btn-light m-auto  d-flex ">
-          <img src="/images.png" alt="submit" style="width: 90px" />
-        </button>
-      </form>
-    </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Numbers and Dates</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="Number">Number:</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                name="Number"
+                id="Number"
+                placeholder="123456"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Date">Date:</label>
+            </td>
+            <td>
+              <input type="date" name="Date" id="Date" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Choices</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="Gender">Gender:</label>
+            </td>
+            <td>
+              <input type="radio" name="Gender" id="Male" value="Male" />
+              <label for="Male">Male</label>
+              <input type="radio" name="Gender" id="Female" value="Female" />
+              <label for="Female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Hobbies">Hobbies:</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Hobbies"
+                id="Reading"
+                value="Reading"
+              />
+              <label for="Reading">Reading</label>
+              <input
+                type="checkbox"
+                name="Hobbies"
+                id="Sports"
+                value="Sports"
+              />
+              <label for="Sports">Sports</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="favcolor">Favorite Color:</label>
+            </td>
+            <td>
+              <select name="favcolor" id="favcolor">
+                <optgroup label="Worm Colors">
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                </optgroup>
+                <optgroup label="Cool Colors">
+                  <option value="blue">Blue</option>
+                  <option value="Green">Green</option>
+                  <option value="Purple">Purple</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Other Input Types</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="fileUpload">File Upload:</label>
+            </td>
+            <td>
+              <input type="file" name="fileUpload" id="fileUpload" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Range">Range(0-100):</label>
+            </td>
+            <td>
+              <input
+                type="range"
+                name="Range"
+                id="Range"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Pickcolor">Pick a Color:</label>
+            </td>
+            <td>
+              <input type="color" name="Pickcolor" id="Pickcolor" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="textarea">Textarea</label>
+            </td>
+            <td>
+              <textarea name="textarea" id="textarea"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="Submit" class="btn" />
+      <input type="reset" value="Reset" class="btn" />
+    </form>
   </body>
 </html>

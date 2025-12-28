@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(180deg, #7e2c5c 0%, #0f2155 100%);
+  }
+  h1 {
+   font-family: sans-serif;
+    text-align: center;
+    padding: 2%;
+    font-size: 60px;
+  }
+  input{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  fieldset {
+    padding: 5%;
+    margin: auto;
+    border-radius: 15px;
+    width: 60%;
+       background: linear-gradient(180deg, #c43f8d5b 0%, #193b993f 100%);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+      align-items: center;
+  }
+  legend{
+      font-size: 1.5em;
+      font-weight: bold;
+      }
+   
+  .btn{
+    background-color: #6d7bb9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+  }
+  .btn:hover{
+    background-color: #5a69a3;
+  }
